@@ -9,7 +9,7 @@ const projects = [
     language: "ReactJS",
     demo: [{ name: "Demo", link: "/" }],
     source: [
-      { name: "Source Code", link: "https://github.com/Mobai101/Pet-App" },
+      { name: "Source Code", link: "https://github.com/Mobai101/Digital-CV" },
     ],
     thumbnail: "/images/portfolio-app.png",
   },
