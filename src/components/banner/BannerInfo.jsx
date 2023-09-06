@@ -34,7 +34,7 @@ const BannerInfo = (props) => {
                 <a
                   href="https://www.facebook.com/mobai123"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <FaFacebookF />
                 </a>
@@ -43,7 +43,7 @@ const BannerInfo = (props) => {
                 <a
                   href="https://github.com/Mobai101"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <PiGithubLogoFill />
                 </a>

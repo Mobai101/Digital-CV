@@ -18,7 +18,10 @@ const projects = [
     desc: "Full Stack application including a client for user to order apple products, an admin page to manage products and orders, and an ExpressJS backend with MongoDB database.",
     language: "ReactJS, NodeJS",
     demo: [
-      { link: "https://applestore-clone-client.web.app/", name: "Client" },
+      {
+        link: "https://applestore-clone-client.firebaseapp.com/",
+        name: "Client",
+      },
       {
         link: "https://applestore-clone-admin.firebaseapp.com/",
         name: "Admin",
@@ -45,8 +48,14 @@ const projects = [
     desc: "Full Stack application including a client for user to book hotel, an admin page to manage hotels and rooms, and an ExpressJS backend with MongoDB database.",
     language: "ReactJS, NodeJS",
     demo: [
-      { link: "https://booking-app-client-d3a00.web.app/", name: "Client" },
-      { link: "https://booking-app-admin-57524.web.app/", name: "Admin" },
+      {
+        link: "https://booking-app-client-d3a00.firebaseapp.com/",
+        name: "Client",
+      },
+      {
+        link: "https://booking-app-admin-57524.firebaseapp.com/",
+        name: "Admin",
+      },
     ],
     source: [
       {
@@ -68,7 +77,9 @@ const projects = [
     title: "Movies App",
     desc: "Application that uses public API to show lists of some trending movies.",
     language: "ReactJS",
-    demo: [{ link: "https://assignment-02-movie.web.app/", name: "Demo" }],
+    demo: [
+      { link: "https://assignment-02-movie.firebaseapp.com/", name: "Demo" },
+    ],
     source: [
       {
         name: "Source Code",

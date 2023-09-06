@@ -14,7 +14,12 @@ const ProjectItem = ({ project }) => {
         <div className="projectItem_middle">
           {project.demo.map((demo) => {
             return (
-              <a href={demo.link} target="_blank" rel="noopener noreferrer">
+              <a
+                href={demo.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={demo.name}
+              >
                 {demo.name}
               </a>
             );
@@ -40,7 +45,7 @@ const ProjectItem = ({ project }) => {
           <ul>
             {project.source.map((source) => {
               return (
-                <li>
+                <li key={source.link}>
                   <a
                     href={source.link}
                     target="_blank"
