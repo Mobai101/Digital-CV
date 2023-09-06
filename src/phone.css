@@ -1,0 +1,64 @@
+@media screen and (max-width: 768px) {
+  .navBar {
+    display: none;
+  }
+
+  .bannerSection {
+    margin-bottom: 400px;
+  }
+
+  .bannerArea {
+    bottom: -60%;
+  }
+
+  .bannerArea img {
+    max-width: 300px;
+  }
+
+  .about_skillTraitContainer {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .about_skillTrait {
+    width: 100%;
+  }
+
+  .expLi {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .edu.active {
+    height: 300px !important;
+  }
+
+  .projectsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .interestsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .referenceSection {
+    padding: 3rem 1rem;
+  }
+
+  .referenceContainer {
+    margin: 4rem 0;
+    grid-template-columns: 1fr;
+  }
+
+  .referenceItem {
+    flex-direction: column;
+  }
+
+  .referenceDetail {
+    border-left: 0;
+    padding-left: 0rem;
+  }
+}

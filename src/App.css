@@ -1,38 +1,466 @@
-.App {
-  text-align: center;
+:root {
+  --purple: #776fff;
+  --cyan: #88f2ff;
+  --grey: #5a5a5a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p,
+h3,
+h4,
+h5 {
+  color: var(--grey);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-weight: 700 !important;
+}
+
+.container {
+  width: 1500px;
+  margin: auto;
+}
+
+.bannerSection {
+  height: 600px;
+  margin-bottom: 200px;
+  position: relative;
+  background: linear-gradient(176.5deg, transparent 80%, #fff 80%),
+    linear-gradient(90deg, var(--purple), var(--cyan));
+}
+
+.navbarContainer {
+  color: white;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 2.5rem;
+}
+
+.navBar {
+  display: flex;
+  gap: 1rem;
+}
+
+.navBar.sticky {
+  padding: 0.3rem;
+  border-radius: 5px;
+  background: rgba(136, 136, 136, 0.327);
+  position: fixed;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+  transition: background 0.2s ease-out;
+}
+
+.navBar.sticky:hover {
+  background: rgba(136, 136, 136, 0.849);
+}
+
+.navBar a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+}
+
+.navBar a:hover {
+  background-color: rgba(245, 245, 245, 0.261);
+  text-shadow: 0px 0px 5px;
+}
+
+.bannerArea {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 10px 10px 40px rgba(100, 100, 100, 0.2);
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 1200px;
+}
+
+.bannerArea img {
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.bannerArea h6 {
+  margin-bottom: 2rem;
+}
+
+.bannerArea svg {
+  color: var(--purple);
+  margin-right: 1rem;
+}
+
+.socialLinks {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLinks svg {
+  margin-right: 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.socialLinks a {
+  background-color: #e8e8e8;
+  padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.socialLinks a:hover {
+  background-image: linear-gradient(to right, #a9a4ff, var(--cyan));
+}
+
+.about_flexContainer {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  margin-bottom: 7rem;
+}
+
+.about_skillTraitContainer {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about_skillTrait {
+  border-radius: 10px;
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--grey);
+  width: 30%;
+  box-shadow: 10px 10px 20px rgba(200, 200, 200, 0.6);
+  transition: opacity 1.6s;
+}
+
+.about_skillTrait svg {
+  color: var(--purple);
+  font-size: 1.7rem;
+}
+
+.about_skillTrait p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.about_rightDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.skillBar {
+  border: 1px solid #d7d7d7;
+  padding: 5px;
+  border-radius: 50px;
+  height: 1.3rem;
+  align-items: center;
+}
+
+.skillProgress {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--purple), var(--cyan));
+  height: 0.5rem;
+  border-radius: 50px;
+  transition: width 1s;
+}
+
+.experienceSection {
+  background: linear-gradient(90deg, var(--purple), var(--cyan));
+  padding: 5rem 0;
+}
+
+.experience_buttonsContainer {
+  justify-content: center;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.experience_buttonsContainer button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(224, 224, 224, 0.139);
+  color: white;
+  padding: 0.7rem 2rem;
+  text-shadow: 1px 1px 5px;
+}
+
+.experience_buttonsContainer button:hover {
+  background-color: rgba(224, 224, 224, 0.311);
+  color: white;
+}
+
+button.active {
+  background-color: white !important;
+  color: var(--grey) !important;
+  text-shadow: none !important;
+}
+
+.expUl {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+}
+
+.expUl::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  background-color: rgba(255, 255, 255, 0.357);
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  border-radius: 5px;
+}
+
+.expLi {
+  width: 80%;
+  display: flex;
+  gap: 2rem;
+  color: white;
+  background: linear-gradient(90deg, #6b63ff56, #88f1ff50);
+  border-radius: 5px;
+  padding: 1.5rem;
+  position: relative;
+  cursor: pointer;
+  height: 100px;
+  transition: height 0.5s, opacity 5s;
+}
+
+.expLi:hover {
+  background: linear-gradient(90deg, #6b63ffc4, #88f1ffcd);
+}
+
+.expLi::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -34px;
+  background-color: white;
+  border: 4px solid #ff9f55;
+  top: 34%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.expLi h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.expLi h6 {
+  margin-bottom: 0;
+}
+
+.expLi p {
+  height: 0;
+  opacity: 0;
+  display: block;
+  margin-bottom: 0;
+
+  transition: none;
+}
+
+.expHeadDiv {
+  min-width: 180px;
+}
+
+.expLi.active {
+  background: white;
+  color: var(--grey);
+  height: 400px;
+}
+
+.expLi.active p {
+  white-space: pre-line;
+  margin-top: 1rem;
+  opacity: 1;
+  height: auto;
+  transition: opacity 0.5s ease-in;
+}
+
+.edu.active {
+  height: 200px !important;
+}
+
+.exp-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.exp-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 500ms, opacity 500ms;
+}
+
+.edu-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.edu-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 500ms, opacity 500ms;
+}
+
+.projectSection {
+  text-align: center;
+  padding: 5rem 0rem;
+}
+
+.projectsContainer {
+  margin-top: 5rem;
+  column-gap: 2rem;
+  row-gap: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projectItem_image {
+  position: relative;
+}
+
+.projectItem_image img {
+  margin-bottom: 2rem;
+  max-width: 400px;
+  border-radius: 10px;
+  transition: opacity 0.5s;
+  position: relative;
+}
+
+.projectItem_middle {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: opacity 0.5s;
+  display: flex;
+  gap: 1rem;
+}
+
+.projectItem_middle a {
+  text-decoration: none;
+  border-radius: 20px;
+  color: white;
+  padding: 0.5rem 1rem;
+  background-color: rgba(136, 136, 136, 0.327);
+}
+
+.projectItem_middle a:hover {
+  text-shadow: 0px 0px 5px;
+  background-image: linear-gradient(to right, #a9a4ff, var(--cyan));
+}
+
+.projectItem:hover img {
+  opacity: 0.3;
+}
+
+.projectItem:hover .projectItem_middle {
+  opacity: 1;
+}
+
+.showDetailBtn {
+  margin: 1rem;
+  color: white;
+  border: none;
+  background-color: rgba(136, 136, 136, 0.327);
+  padding: 0.2rem 0.5rem;
+  border-radius: 50px;
+}
+
+.showDetailBtn:hover {
+  text-shadow: 0px 0px 5px;
+  background-image: linear-gradient(to right, #a9a4ff, var(--cyan));
+}
+
+.projectItem_detail {
+  text-align: left;
+}
+
+.interestSection {
+  background: linear-gradient(90deg, var(--purple), var(--cyan));
+  padding: 5rem 0;
+  color: white;
+  text-align: center;
+}
+
+.interestsContainer {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.interestsContainer p {
+  color: white;
+  text-align: left;
+}
+
+.interestsContainer svg {
+  height: 6rem;
+  width: 6rem;
+}
+
+.interestBtn:hover {
+  background-image: none;
+  background-color: rgba(245, 245, 245, 0.261);
+}
+
+.referenceSection {
+  padding: 3rem;
+}
+
+.referenceContainer {
+  margin: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.referenceItem {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #5a5a5a98;
+  background-color: white;
+  padding: 2rem;
+  max-width: 500px;
+}
+
+.referenceItem img {
+  height: auto;
+  width: 130px;
+}
+
+.referenceDetail {
+  border-left: 1px solid rgba(0, 0, 0, 0.373);
+  padding-left: 2rem;
+  height: 100%;
 }
