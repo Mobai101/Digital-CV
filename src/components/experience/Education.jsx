@@ -5,7 +5,7 @@ const education = [
   {
     period: "Feb 2023 - Present",
     company: "FUNIX",
-    role: "Full Stack Enterprise Certificate",
+    role: "Web Fullstack Developer Certificate",
     responsibilities: `HTML/CSS: GPA 8.7
     JavaScript: GPA 7.2
     ReactJS: GPA 9.4
