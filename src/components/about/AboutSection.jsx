@@ -26,7 +26,7 @@ const AboutSection = (props) => {
             <div className="about_skillTraitContainer">
               <SkillTrait
                 skillName="English"
-                skillDesc="Advanced English skill, can communicate with foreigner."
+                skillDesc="Advanced English skill, strong technical reading and can communicate with foreigner."
               >
                 <HiOutlineChatBubbleBottomCenterText />
               </SkillTrait>
@@ -38,7 +38,7 @@ const AboutSection = (props) => {
               </SkillTrait>
               <SkillTrait
                 skillName="Office"
-                skillDesc="Well familiar with MS Office 365 Suite."
+                skillDesc="Well familiar with MS Office 365 Suite, especially MS Excel."
               >
                 <SiMicrosoftoffice />
               </SkillTrait>
