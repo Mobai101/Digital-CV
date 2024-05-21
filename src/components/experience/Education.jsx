@@ -3,7 +3,7 @@ import ExperienceItem from "./ExperienceItem";
 
 const education = [
   {
-    period: "Feb 2023 - Present",
+    period: "Mar 2023 - Sep 2023",
     company: "FUNIX",
     role: "Web Fullstack Developer Certificate",
     responsibilities: `HTML/CSS: GPA 8.7

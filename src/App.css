@@ -290,7 +290,7 @@ button.active {
 .expLi.active {
   background: white;
   color: var(--grey);
-  height: 400px;
+  height: 300px;
 }
 
 .expLi.active p {

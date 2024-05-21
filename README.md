@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# My Portfolio online site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Video Demo: https://youtu.be/EPD2MmdjUT8
 
-## Available Scripts
+#### Description:
 
-In the project directory, you can run:
+This is a webpage that showcases all of my personal projects that I have done in my journey to learn how to program. This is something that I have learnt that everyone who is trying to get into programming will need to have one in order to impress the employers.
 
-### `npm start`
+The project was created using ReactJS, a front-end JavaScript library that made creating a website easier and more managable. I decided to use ReactJS because I want to show potential employers that I know how to use ReactJS instead of just using plain JavaScript. ReactJS also made it easier to manage and update the website in the future.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project folder was separated into a few different folder, most notably is the src folder, containing all the source code of the project and the components folder which holds all the components of the website that then will be merged together by ReactJS into a complete webpage. Each component is a section of the webpage, going from top to bottom, they will be: banner - about - experience - projects - interest - reference.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The utils folder contains components that are not specific to any section of the webpage but is used throughout the webpage as utilities. In the case of my project, this folder only contains the Container util which is a wrapper component to makes every section of the webpage have a fixed width when viewing the webpage from a desktop device.
 
-### `npm test`
+The other folders and files in the project such as the public folder or the package.json file are for nodeJS to fetch dependancies when needed so the project can work on any devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project is deployed to firebase, which is a google hosting service which also has a free tier for people like me to host our own small project without any additional cost.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The URL to the hosted webpage is: https://tranledong-dn-cv.web.app/

@@ -5,17 +5,14 @@ const experiences = [
   {
     period: "July 2019 - Nov 2022",
     company: "NGSC",
-    role: "SharePoint Support Specialist / Business Analyst",
-    responsibilities: `BA Tasks:
-      - Work with end user to receive and analyze requirement.
-      - Create documents for improvement project (proposal, requirement document, functional specification, SDT, UAT, User Guide).
-      - Work with development team with document, design and testing for new improvement project.
-
-      Support Tasks:
-      - Support users with how to use the SharePoint system.
-      - Receive issues from users and find solution to resolve or forward to development team to fix serious bugs.
-      - Work with users' departments to manage system config, permission and workflow on the system.
-      - Support with other management tasks of team such as reports, arrange meeting, managing tickets, etc.`,
+    role: "SharePoint Tester / Business Analyst",
+    responsibilities: `- Support users with how to use the SharePoint system.
+    - Work with end user to receive and analyze problems.
+    - Create documents for projects (proposal, requirement document, functional specification, SDT, UAT, User Guide).
+    - Work with development team with document, design and testing for new projects.
+    - Work with users departments to manage database, permission and workflow on the system.
+    - Support with other management tasks of team such as reports, arrange meeting, managing tickets, etc.
+    `,
   },
   {
     period: "Oct 2018 - May 2019",

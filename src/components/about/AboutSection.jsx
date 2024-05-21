@@ -15,13 +15,12 @@ const AboutSection = (props) => {
             <h3 style={{ fontWeight: "700" }}>ABOUT ME</h3>
             <p>
               From 2019 to 2022, I was working for NGSC (in Ha Noi) as a
-              SharePoint Support Specialist / Business analyst for the Nghi Son
-              Refinery project. Due to my passion for technology in general and
-              for coding in particular plus my personal goal of moving from Ha
-              Noi to Da Nang, I have spent the last year learning how to
-              program. My current goal is to be able to work as a software
-              engineer at a company in Da Nang and eventually become a senior
-              developer.
+              SharePoint Tester / Business Analyst for the Nghi Son Refinery
+              project. Due to my passion for technology in general and for
+              coding in particular plus my personal goal of moving from Ha Noi
+              to Da Nang, I have spent the last year learning how to program. My
+              current goal is to be able to work as a software engineer at a
+              company in Da Nang and eventually become a senior developer.
             </p>
             <div className="about_skillTraitContainer">
               <SkillTrait
