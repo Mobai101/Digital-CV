@@ -4,6 +4,29 @@ import ProjectItem from "./ProjectItem";
 
 const projects = [
   {
+    title: "Move Video Viewing App",
+    desc: "Video app for user to view, upload, rate, follow videos relating to health and workout. The front-end of the application is developed in VueJS, the Back-end is developed in NodeJS and PHP. Since this project is not open source, to view the demo or source code please contact me.",
+    language: "VueJS, NodeJS, PHP",
+    demo: [{ name: "Demo", link: "https://move-training-stg.madlab.tech/" }],
+    source: [
+      {
+        name: "Source Code",
+        link: "https://github.com/thapMadison/move-project-2024",
+      },
+    ],
+    thumbnail: "/images/move-thumbnail.png",
+  },
+  {
+    title: "Agency Promotional Page",
+    desc: "Promitional Page for an imaginary company called Agency",
+    language: "VueJS",
+    demo: [{ name: "Demo", link: "https://mobai101.github.io/agency-vue/" }],
+    source: [
+      { name: "Source Code", link: "https://github.com/Mobai101/agency-vue" },
+    ],
+    thumbnail: "/images/agency-thumbnail.png",
+  },
+  {
     title: "Digital Curriculum Vitae",
     desc: "Personal Portfolio / CV",
     language: "ReactJS",
@@ -122,9 +145,9 @@ const ProjectSection = (props) => {
       <Container>
         <h1>MY PROJECTS</h1>
         <div className="projectsContainer">
-          {projects.map((proj) => {
-            return <ProjectItem project={proj} key={proj.title} />;
-          })}
+          {projects.map((proj) => (
+            <ProjectItem project={proj} key={proj.title} />
+          ))}
         </div>
       </Container>
     </section>

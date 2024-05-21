@@ -28,7 +28,11 @@
   }
 
   .expLi.active {
-    height: auto;
+    height: auto !important;
+  }
+
+  .edu.active {
+    height: auto !important;
   }
 
   .projectsContainer {

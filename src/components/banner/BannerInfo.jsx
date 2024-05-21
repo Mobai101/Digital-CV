@@ -13,43 +13,40 @@ const BannerInfo = (props) => {
           <div>
             <img src="/images/avatar.jpg" alt="avatar" />
           </div>
-          <div>
+          <address>
             <p>HELLO EVERYBODY, I AM</p>
             <h1>TRAN LE DONG</h1>
             <h6>FULL STACK DEVELOPER</h6>
             <p>
               <BsCalendar3 /> 01/01/1995
             </p>
-            <p>
+            <a href="tel:+84396446388">
               <BsTelephone /> (+84) 39 644 6388
-            </p>
-            <p>
+            </a>
+            <a href="mailto:tranledong0101@gmail.com">
               <FiMail /> tranledong0101@gmail.com
-            </p>
+            </a>
             <p>
               <BsHouseDoor /> 97 Bui Duong Lich, Son Tra, Da Nang
             </p>
             <div className="socialLinks">
-              <span>
-                <a
-                  href="https://www.facebook.com/mobai123"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaFacebookF />
-                </a>
-              </span>
-              <span>
-                <a
-                  href="https://github.com/Mobai101"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <PiGithubLogoFill />
-                </a>
-              </span>
+              <a
+                href="https://www.facebook.com/mobai123"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookF />
+              </a>
+
+              <a
+                href="https://github.com/Mobai101"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <PiGithubLogoFill />
+              </a>
             </div>
-          </div>
+          </address>
         </div>
       </Container>
     </section>

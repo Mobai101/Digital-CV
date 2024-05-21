@@ -10,6 +10,7 @@ const ExperienceItem = ({ exp, edu }) => {
     <li
       key={exp.role}
       className={`expLi ${edu} ${isShownExp ? "active" : ""}`}
+      style={{ height: `${isShownExp ? exp.height : ""}` }}
       onClick={clickHandler}
     >
       <div className="expHeadDiv">

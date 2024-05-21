@@ -95,6 +95,13 @@ h1 {
   border-radius: 10px;
 }
 
+.bannerArea a {
+  text-decoration: none;
+  color: var(--grey);
+  display: block;
+  margin-bottom: 1rem;
+}
+
 .bannerArea h6 {
   margin-bottom: 2rem;
 }
@@ -117,7 +124,7 @@ h1 {
 
 .socialLinks a {
   background-color: #e8e8e8;
-  padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.3rem 0.6rem 0.5rem 0.6rem;
   border-radius: 5px;
 }
 
@@ -290,7 +297,6 @@ button.active {
 .expLi.active {
   background: white;
   color: var(--grey);
-  height: 300px;
 }
 
 .expLi.active p {
@@ -299,10 +305,6 @@ button.active {
   opacity: 1;
   height: auto;
   transition: opacity 0.5s ease-in;
-}
-
-.edu.active {
-  height: 200px !important;
 }
 
 .exp-enter {
@@ -342,14 +344,17 @@ button.active {
 
 .projectItem_image {
   position: relative;
+  overflow: clip;
+  max-width: 400px;
+  height: 200px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
 }
 
 .projectItem_image img {
-  margin-bottom: 2rem;
-  max-width: 400px;
   border-radius: 10px;
+  max-height: 100%;
   transition: opacity 0.5s;
-  position: relative;
 }
 
 .projectItem_middle {

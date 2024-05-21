@@ -18,14 +18,18 @@ const AboutSection = (props) => {
               SharePoint Tester / Business Analyst for the Nghi Son Refinery
               project. Due to my passion for technology in general and for
               coding in particular plus my personal goal of moving from Ha Noi
-              to Da Nang, I have spent the last year learning how to program. My
-              current goal is to be able to work as a software engineer at a
-              company in Da Nang and eventually become a senior developer.
+              to Da Nang, I have spent the good part of last year learning how
+              to program. Recently, I have joined an internship program in
+              Madison Technologies but afterward they decided to let go of the
+              whole internship team (probably due to having no additional
+              project for our team to work on, tight budget, etc.). Therefore, I
+              am now currently seeking new opportunities that will allow me to
+              leverage my skills and experiences in this field.
             </p>
             <div className="about_skillTraitContainer">
               <SkillTrait
                 skillName="English"
-                skillDesc="Advanced English skill, strong technical reading and can communicate with foreigner."
+                skillDesc="Advanced English skill, strong technical reading and can communicate with English confidently."
               >
                 <HiOutlineChatBubbleBottomCenterText />
               </SkillTrait>
@@ -47,8 +51,9 @@ const AboutSection = (props) => {
             <SkillScore skillName="HTML/CSS" skillScore="90%" />
             <SkillScore skillName="JavaScript" skillScore="80%" />
             <SkillScore skillName="ReactJS" skillScore="100%" />
+            <SkillScore skillName="VueJS" skillScore="100%" />
             <SkillScore skillName="NodeJS" skillScore="80%" />
-            <SkillScore skillName="Python" skillScore="30%" />
+            <SkillScore skillName="Python" skillScore="50%" />
             <SkillScore skillName="MongoDB" skillScore="90%" />
             <SkillScore skillName="SQL" skillScore="70%" />
           </div>

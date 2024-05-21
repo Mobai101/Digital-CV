@@ -10,12 +10,22 @@ const education = [
     JavaScript: GPA 7.2
     ReactJS: GPA 9.4
     NodeJS: GPA 9.4`,
+    height: "200px",
+  },
+  {
+    period: "Jan 2023 - Jun 2023",
+    company: "HARVARD UNIVERSITY",
+    role: "CS50x",
+    responsibilities: `Completed the CS50x course online including ten problem sets, nine labs, and one final project.
+    `,
+    height: "150px",
   },
   {
     period: "Aug 2013 - Jun 2017",
     company: "HANOI UNIVERSITY",
     role: "Bachelor - Finance and Banking",
     responsibilities: `GPA: 6.85 (Studied in English)`,
+    height: "140px",
   },
 ];
 
